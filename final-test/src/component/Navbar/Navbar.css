@@ -1,0 +1,111 @@
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-topo {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.navbar .actives {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #2264F0 ;
+    cursor: pointer;
+}
+
+.navbar .active {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #2264F0 ;
+    cursor: pointer;
+}
+
+.navbar li {
+    cursor: pointer ;
+}
+
+.narbar-bottom {
+    border-bottom: 2px solid #91949B ;
+}
+
+.navbar-input {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    gap: 40px;
+    position: relative;
+    left: -24px;
+}
+
+
+.navbar-input input {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #c5c5c5;
+    border-radius: 6px;
+    outline-color: #2264F0;
+}
+
+.navbar-input button {
+    border: none;
+    color: white;
+    background-color: #2264F0;
+    width: max(10vw,100px);
+    padding: 12px 0px;
+    border-radius: 6px;
+}
+
+.task-list {
+    margin-top: 20px;
+  }
+  
+  .task-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list .task-item {
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    margin-left: 306px;
+    margin-top: 16px;
+}
+  
+  .task-list .items-input {
+    margin-right: 10px; 
+  }
+
+/* khi check box đã dc nhấn thì ta cho dấu gạch ở phần nội dung */
+.task-list .items-input:checked + span {
+    text-decoration: line-through; 
+    /* color: #888; */
+}
+
+.task-list .task-item .icon {
+    position: absolute; 
+    left: 50%;
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+
+
+  .delete-all {
+    position: relative;
+    left: 788px;
+    top: 30px;
+    border: none;
+    color: white;
+    background-color: red;
+    width: max(10vw,100px);
+    padding: 12px 0px;
+    border-radius: 6px;
+  }
